@@ -1,0 +1,263 @@
+/*images{
+      background-image: url("https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2017/01/Google-IO-796x398.jpg");
+    background-image: url("https://cdn2.tnwcdn.com/wp-content/blogs.dir/1/files/2015/08/influencer-1200x617.jpg");
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/05/UploadVR-796x399.jpg");
+}
+*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*customized bootstrap classes*/
+.container{
+  margin-left: 5px ;
+  margin-right: 5px;
+  width: 100%;
+}
+nav, .navbar, .navbar-inverse{
+  position: fixed;
+}
+.navbar{
+  border-radius: 0px;
+  min-height: 0;
+}
+ul{
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#float-left{
+  float: left;
+}
+#float-right{
+  float: right;
+}
+li{
+  display: inline;
+  color: white;
+  padding: 5px;
+}
+.col-md-8, .col-sm-8{
+  background-image: url("../images/google.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height:450px;
+  margin-right: -10px;
+}
+.col-md-4{
+  /*background-color: lime;*/
+  min-height: 450px;
+  margin: 0 auto;
+}
+
+.col-md-3{
+  min-height: 250px;
+}
+.col-md-12, .col-sm-12{
+  padding-top: 5px;
+  padding-left: 0;
+}
+
+/*gradient class at div for section 1*/
+.gradient{
+  background: black; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(255,0,0,.4), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,0,0,.4), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,0,0,.4), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,0,0,.4), rgba(0,0,0,1)); /* Standard syntax */
+  min-height: 450px;
+}
+
+/*tnw logo id*/
+#tnw{
+  max-height: 100px;
+}
+
+.influencer{
+  background-image: url("../images/influencer.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 220px;
+  margin-bottom: 5px;
+  padding: 0;
+}
+.gradient-2{
+  width: inherit;
+  min-height: 220px;
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,1));
+}
+
+.upload{
+  background-image: url("../images/upload.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 220px;
+  margin-top: 5px;
+  padding: 0;
+  /*position: absolute;*/
+}
+.date{
+  /*right: 5%;*/
+  color: white;
+  display: inline;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-weight: normal;
+  font-size: 14px;
+}
+.category{
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+}
+.category-small{
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+}
+.author{
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+}
+.author-small{
+  color: rgba(255,255,255,0.7);
+  font-size: 10px;
+}
+.headline-big{
+  color: white;
+  bottom: 5%;
+  position: absolute;
+  font-weight: bold;
+  margin: 10px;
+  font-size: 36px;
+}
+
+.headline-small{
+  color: white;
+  bottom: 5%;
+  position: absolute;
+  font-weight: bold;
+  margin: 10px;
+  font-size: 20px;
+}
+/*#green{
+  background-color: green;
+  min-height: 150px;
+  position: absolute;
+}*/
+
+.item{
+    /*width: 300px;*/
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+h3{
+  color:#ff4e2b;
+  font-weight: bold;
+}
+.description{
+    font-weight: bold;
+    /*padding: 10px;*/
+    position: relative;
+}
+
+p{
+  font-weight: normal;
+  font-size: 12px;
+}
+
+/*picture ids*/
+#amazon{
+    background-image: url("../images/amazon.jpg");
+}
+#twitter{
+    background-image: url("../images/twitter.jpg");
+}
+#mouse-babies{
+    background-image: url("../images/mouse-babies.jpg");
+}
+#gear{
+    background-image: url("../images/gear.png");
+}
+#database{
+    background-image: url("../images/database.jpg");
+}
+#mobile-user-design{
+    background-image: url("../images/mobile-user-design.jpg");
+}
+#wannacry{
+    background-image: url("../images/wannacry.jpg");
+}
+#zuckerberg{
+    background-image: url("../images/zuckerberg.png");
+}
+
+
+@media (max-width: 990px) {
+
+  .col-sm-4{
+    min-height: 250px;
+  }
+  .influencer{
+    margin-bottom: 10px;
+  }
+  .upload{
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  .col-sm-8{
+    margin-right: -10px;
+    padding: 0;
+  }
+
+
+}
+@media (max-width: 770px) {
+  .item{
+      max-width: 100px;
+      max-height: 100px;
+      background-size: cover;
+      background-position: center;
+  }
+  .col-xs-10{
+    position: absolute;
+    margin-left: 100px;
+  }
+  .description{
+      font-weight: bold;
+      padding: 10px;
+  }
+  .col-xs-12{
+    min-height: 110px;
+  }
+  #main-headline{
+    background-image: url("../images/google.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height:250px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    /*padding: 10px;*/
+    /*margin-right: -10px;*/
+  }
+  .gradient{
+    min-height: 250px;
+  }
+  .headline-big{
+    color: white;
+    bottom: 5%;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 20px;
+  }
+  .col-md-8, .col-sm-8{
+    margin:0;
+  }
+}
